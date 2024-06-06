@@ -33,7 +33,6 @@ layout: post
 
 - ionic Framework
 
-
 # Resources
 
 - [React Native Documentary](https://cult.honeypot.io/reads/react-js-the-documentary-how-it-all-began/) from Honepot.io
