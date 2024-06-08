@@ -16,6 +16,7 @@ layout: post
 
 
 - [enounceAI](https://www.congressionalappchallenge.us/23-NV01/): Language learning with an AI bot
+    - Thoughts: AI may be too new to succesfully understand (does AI even understand anything?) the nuances of casual conversation language.
 
 # Brainstorming
 
