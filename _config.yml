@@ -4,6 +4,7 @@ description: A devlog for the 2024 Congressional App Challenge.
 baseurl: "" 
 url: "https://cspablocortez.github.io" 
 github_username: cspablocortez
+# twitter_username: jekyllrb
 
 # Build settings
 theme: minima
