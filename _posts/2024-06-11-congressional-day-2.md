@@ -21,11 +21,12 @@ and AI to ask more detailed questions.[^1]
 - Questions are too context-dependent
 - Hard to be honest with yourself because it could change at any moment
 - Personality may be complex enough to include more than just the result given
+- Touchscreen-based UIs may be better suited for slider test formats.
 
 # Test Format
 
 1. Paginated questions
-2. Checkbox answers
+2. Checkbox answers (multiple options)
 3. Sliders (snapping options)
 4. Radio Buttons (vertical)
 5. Radio Buttons (horizontal)
