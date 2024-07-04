@@ -1,0 +1,10 @@
+{% for post in site.posts %}
+<h4>Latest Posts</h4>
+<ol>
+    <li style="list-style-type: none;">
+        <a href="{{ post.url }}">
+            <h3>{{ post.title }}</h3>
+        </a>
+    </li>
+{% endfor %}
+</ol>

@@ -11,3 +11,6 @@ minima.
 
 (20:04) I've separated default.html from page.html, helping with modularizing code.
 
+(20:13) Needed to make a home.html to account for the blog posts feed
+
+(21:01) Blockquotes look ok. Font-sizing remains unclear.
