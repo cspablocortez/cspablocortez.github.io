@@ -16,3 +16,9 @@ minima.
 (21:01) Blockquotes look ok. Font-sizing remains unclear.
 
 (21:17) Sample post ready for font styling.
+
+(21:45) Categories should be displayed like tabs on the side, like post it notes.
+
+(22:13) Each essay, unlike posts, will have its own style to suit its purpose.
+
+(22:20) I gotta turn the title of each post into a navigation. Or I just need a navigation anyway.

@@ -4,19 +4,23 @@
 }
 
 html {
-    background-color: #e8e8e8; /* Light beige background color */
+    background-color: #e7e3be; /* Light beige background color */
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
     background-size: 10px 10px; /* Adjust the size of the dots */
 }
 
 .page-header {
     padding: 1rem 1.65rem; 
-    font-size: 1.85rem; 
     border-bottom: 1px solid black; 
     letter-spacing: 0.125rem;
     /* background-color: whitesmoke;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
     background-size: 100% 5px; Adjust the height of the lines */
+}
+
+.page-header h4 {
+    font-size: 1.85rem; 
+    margin-bottom: 0;
 }
 
 blockquote {
