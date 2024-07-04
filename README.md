@@ -14,3 +14,5 @@ minima.
 (20:13) Needed to make a home.html to account for the blog posts feed
 
 (21:01) Blockquotes look ok. Font-sizing remains unclear.
+
+(21:17) Sample post ready for font styling.
