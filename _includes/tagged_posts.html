@@ -1,0 +1,32 @@
+
+
+<!-- <h1>Posts by Tag</h1> -->
+
+{% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+{% assign tags = all_tags | where_exp: "tag", "tag != 'devlog'" %}
+
+<div>
+  {% for tag in tags %}
+    <!-- <li> -->
+      <h2>{{ tag }}</h2>
+        {% for post in site.posts %}
+          {% if post.tags contains tag %}
+          <div class="feed-item" style="margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between;">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p style="font-size: 0.9rem; color: var(--grey)">{{ post.date | date: "%m/%d/%y" }}</p>
+        </div>
+          {% endif %}
+        {% endfor %}
+    <!-- </li> -->
+  {% endfor %}
+</div>
+
+<style>
+    .feed-item a:visited {
+        color: var(--grey);
+    }
+</style>
+
+{% for post in site.posts %}
+
+{% endfor %}
