@@ -60,7 +60,7 @@ nav a {
     color: #6e6e73;
 }
 
-.highlight, .code {
+/* .highlight, .code {
     padding: 1px 15px;
     background-color: var(--code-background-color);
     color: var(--code-color);
@@ -68,7 +68,7 @@ nav a {
     margin-block-start: 1em;
     margin-block-end: 1em;
     overflow-x: auto;
-}
+} */
 
 /* Responsive Design */
 
