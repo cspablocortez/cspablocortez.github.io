@@ -1,8 +1,6 @@
 source "https://rubygems.org"
 
-# gem "jekyll"
 gem "webrick"
-gem "rouge"
 
 group :jekyll_plugins do
   gem "github-pages"
