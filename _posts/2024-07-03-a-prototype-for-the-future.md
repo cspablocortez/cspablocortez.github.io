@@ -3,6 +3,7 @@ title: A Prototype for the Future
 date: 2024-07-03
 layout: post
 published: true
+author: Robin Rendle
 ---
 
 [Jack Cheng](https://www.jackcheng.com/sunday/423-die-hard-calmwashing-and-cosplaying-the-future/):

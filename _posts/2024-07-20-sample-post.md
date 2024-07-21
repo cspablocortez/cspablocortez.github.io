@@ -6,6 +6,7 @@ author:
 - Bart Simpson
 - Nelson Mandela Muntz
 meta: "Springfield"
+permalink: /test
 ---
 
 # Header 1

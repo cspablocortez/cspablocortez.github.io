@@ -1,0 +1,122 @@
+:root {
+    --accent-color: #1f7de1;
+    --bg-color: white;
+    --text-color: #222;
+    --grey: #6e6e73;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: black;
+        --text-color: white;
+    }
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.25rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a { 
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+/* Posts.html */
+
+.post-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.post-header h1, .post-header p {
+    margin: 0;
+}
+
+.post-byline {
+    font-size: 1rem;
+    color: #6e6e73;
+}
+
+.highlight, .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+/* Elements */
+
+blockquote {
+    border-left: 2px solid #8b8b8b;
+    padding-left: 1rem;
+}
+
+/* iphone regular (no pro max) size */
+@media (max-width: 400px) {
+    nav {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: flex-end;
+        /* position: fixed; */
+        /* background-color: var(--bg-color); */
+        /* margin-bottom: 200px; */
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 750px) {
+
+    .container {
+        max-width: 55%;
+        font-size: 1.125rem;
+    }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1024px) {
+
+    .container {
+        max-width: 40%;
+    }
+}

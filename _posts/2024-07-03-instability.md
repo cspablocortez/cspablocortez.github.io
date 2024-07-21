@@ -3,6 +3,7 @@ title: Instability
 date: 2024-07-03
 layout: post
 published: true
+author: Robin Rendle
 ---
 
 I’ve been thinking a lot about how the web is changing. Here’s [Nilay Patel](https://www.theverge.com/24167865/google-zero-search-crash-housefresh-ai-overviews-traffic-data-audience):

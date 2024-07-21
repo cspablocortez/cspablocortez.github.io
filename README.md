@@ -22,3 +22,9 @@ minima.
 (22:13) Each essay, unlike posts, will have its own style to suit its purpose.
 
 (22:20) I gotta turn the title of each post into a navigation. Or I just need a navigation anyway.
+
+***
+
+Sat Jul 20
+
+(17:16) Update to the entire site. Using a Bear-blog inspired UI at least as a base, implemented in Flexbox. 
