@@ -2,7 +2,7 @@
 title: New repository for Flexbox practice
 date: 2024-07-21
 layout: post
-published: true
+published: false
 ---
 
 Just like we created the JavaScript Reference project to understand plain 
