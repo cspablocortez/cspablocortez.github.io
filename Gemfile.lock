@@ -316,7 +316,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
   jekyll-feed (~> 0.12)
   rouge
   webrick
