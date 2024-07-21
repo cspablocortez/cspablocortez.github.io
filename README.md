@@ -28,3 +28,8 @@ minima.
 Sat Jul 20
 
 (17:16) Update to the entire site. Using a Bear-blog inspired UI at least as a base, implemented in Flexbox. 
+
+Sun Jul 21
+
+(15:58) Pending: Overflow on code snippets. May need to 
+widen body for code layouts.
