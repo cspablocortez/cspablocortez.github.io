@@ -4,5 +4,5 @@ title: Devlogs
 author: Pablo E. Cortez
 ---
 
-These are the development logs (*devlogs*) for ongoing student programming projects.
+This page will be for development logs (*devlogs*) of ongoing student programming projects.
 

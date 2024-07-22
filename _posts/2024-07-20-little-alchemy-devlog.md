@@ -2,7 +2,7 @@
 title: Little Alchemy Devlog
 date: 2024-07-20
 layout: post
-published: true
+published: false
 tags: [devlog]
 ---
 
