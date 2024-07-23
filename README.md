@@ -33,3 +33,7 @@ Sun Jul 21
 
 (15:58) Pending: Overflow on code snippets. May need to 
 widen body for code layouts.
+
+Tue Jul 23
+
+Updated favicon to [pablocortez.github.io](https://pablocortez.github.io) favicon.
