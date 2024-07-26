@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-byline">
+        {% if page.author %}
+          {{ page.author }} &bull; 
+        {% endif %}
+        {{ page.date | date: "%A %B %-d" }}
+      </p>
+      
+    </header>
+  
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+</article>
+
+<script>
+
+    function checkAnswer(button) {
+            var lesson = button.parentElement;
+            var userInput = lesson.querySelector('.userInput').value.trim();
+            var feedback = lesson.querySelector('.feedback');
+            var correctAnswer = lesson.getAttribute('data-answer');
+
+            if (userInput === correctAnswer) {
+                feedback.textContent = 'Correct!';
+                feedback.className = 'feedback result';
+            } else {
+                feedback.textContent = 'Try again.';
+                feedback.className = 'feedback error';
+            }
+        }
+
+</script>
