@@ -87,6 +87,34 @@ pre.highlight {
     color: white;
 }
 
+
+.userInput {
+    padding: 1rem;
+    font-family: monospace;
+/*    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+    background-color: #272822;
+    color: #eee;
+    outline: none;
+    border: none;
+    width: 85%;
+}
+
+.checkBtn {
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+    width: 64px;
+    height: 64px;
+    border: none;
+    display: block;
+    opacity: 0.5;
+    background: url("/assets/images/next.svg") no-repeat;
+}
+
+.checkBtn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 /* Responsive Design */
 
 
@@ -123,6 +151,10 @@ blockquote {
     flex-wrap: wrap;
     line-height: 1.5;
     max-width: 50%;
+}
+
+.userInput {
+    width: 95%;
 }
 
 }

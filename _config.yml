@@ -1,5 +1,10 @@
+title: Website Title
+
 markdown: kramdown
 highlighter: rouge
 
 kramdown:
   syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed

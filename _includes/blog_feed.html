@@ -5,8 +5,10 @@
 </style>
 
 {% for post in site.posts %}
+{% unless post.hidden %}
 <div class="feed-item" style="margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between;">
     <a href="{{ post.url }}">{{ post.title }}</a>
     <p style="font-size: 0.9rem; color: var(--grey)">{{ post.date | date: "%m/%d/%y" }}</p>
 </div>
+{% endunless %}
 {% endfor %}
