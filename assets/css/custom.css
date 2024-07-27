@@ -122,7 +122,6 @@ footer {
     font-size: 80%;
     position: fixed;
     bottom: 0;
-    lefr: 0;
     max-width: 650px; 
     padding: 1rem;
     color: var(--grey);
