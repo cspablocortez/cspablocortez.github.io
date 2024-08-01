@@ -52,47 +52,5 @@ Since you have experience using the Jekyll static site generator, you tell the c
 
 ## Jekyll 
 
+*We will build this one in class together*.
 
-
-
-There are two things you should know when meeting with a 
-prospective client if you are a web developer. We talked about 
-the name of their website (**domain**) and the
-type of app they are making and where it will be served from
-(**hosting**). 
-
-Besides hosting, you should know the website's `__________`.
-
-
-
-Once you know the website's domain, you should learn more about
-how you will handle the  `________`.
-
-<div style="visibility: visible;" class="lesson" data-answer="hosting">
-<input type="text" class="userInput" placeholder="Enter your code here">
-        <button class="checkBtn" onclick="checkAnswer(this)"></button>
-        <p class="feedback">
-        </p>
-
-</div>
-
-One of the tools we have used is called Jekyll. Jekyll is a **static site generator**.
-Would you use Jekyll for a **website** or a web **app**?
-
-<div style="visibility: visible;" class="lesson" data-answer="website">
-<input type="text" class="userInput" placeholder="Enter your code here">
-        <button class="checkBtn" onclick="checkAnswer(this)"></button>
-        <p class="feedback">
-        </p>
-
-</div>
-
-4. The creator of Jekyll, Tom Preston-Werner, also created `_______`.
-
-<div style="visibility: visible;" class="lesson" data-answer="github">
-<input type="text" class="userInput" placeholder="Enter your code here">
-        <button class="checkBtn" onclick="checkAnswer(this)"></button>
-        <p class="feedback">
-        </p>
-
-</div>
