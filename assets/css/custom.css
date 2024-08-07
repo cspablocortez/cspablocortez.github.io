@@ -16,9 +16,19 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0.25rem;
     background-color: var(--bg-color);
     color: var(--text-color);
+    min-height: 97vh;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem; /* 1rem = 16px */
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a { 
@@ -28,24 +38,35 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 nav {
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem;
+}
+
+nav h1 {
+    font-size: 2.8rem;
 }
 
 nav a {
     margin-right: 1rem;
+    color: var(--accent-color);
+}
+
+nav a:last-child {
+    margin-right: 0;
 }
 
 /* Posts.html */
 
 .post-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .post-header {
@@ -61,7 +82,16 @@ nav a {
 
 .post-byline {
     font-size: 1rem;
-    color: #6e6e73;
+    color: var(--grey);
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+}
+
+.post-content ul {
+    padding: 0rem 1.5rem;
+    margin-bottom: 1rem;
 }
 
 pre.highlight {
@@ -94,12 +124,9 @@ pre.highlight {
 
 .userInput {
     padding: 1rem;
-/*    font-family: monospace;*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #272822;
     color: #eee;
-/*    background-color: #e5e5e5;*/
-/*    color: #222;*/
     outline: none;
     border: none;
     width: 85%;
@@ -122,10 +149,6 @@ pre.highlight {
     cursor: pointer;
 }
 
-.container {
-    margin-bottom: 8rem;
-}
-
 footer {
     font-size: 80%;
     position: fixed;
@@ -145,52 +168,14 @@ blockquote {
     padding-left: 1rem;
 }
 
-/* iphone regular (no pro max) size */
-@media (max-width: 400px) {
-    nav {
-        width: 100%;
-        margin: 0 auto;
-        justify-content: flex-end;
-/*         position: fixed; */
-        /* background-color: var(--bg-color); */
-        /* margin-bottom: 200px; */
-        /* align-items: center; */
-        /* flex-wrap: wrap; */
-    }
-}
+/* Media Queries */
 
-/* Larger than phablet */
-@media (min-width: 650px) {
-
-.container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    line-height: 1.5;
-    max-width: 50%;
-}
-
-.userInput {
-    width: 95%;
-}
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1024px) {
-
+@media (min-width: 550px) {
     .container {
-        max-width: 45%;
-        margin-bottom: 8rem;
+        width: 550px;
     }
 
-    footer {
-        max-width: 90%;
-        display: flex;
-        justify-content: center;
-/*        background-color: aliceblue;*/
+    nav {
+        justify-content: space-around;
     }
 }
