@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/assets/css/gallery.css">
+
+<div class="cards-container">
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="card">
+        <div class="card-img-container">
+            <img src="{% if post.image %}{{ post.image }}{% else %}https://via.placeholder.com/300x500{% endif %}" alt="{{ post.title }}" class="card-img">
+        </div>
+        <div class="card-content">
+            <h2 class="card-title">{{ post.title }}</h2>
+            <!-- <p class="card-description">{{ post.excerpt }}</p> -->
+        </div>
+    </a>
+    {% endfor %}
+</div>
