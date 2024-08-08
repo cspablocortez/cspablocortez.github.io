@@ -13,7 +13,7 @@ written in HTML.
 ## Install Ruby and Jekyll
 
 ```sh
-gem install jekyll bundler
+$ gem install jekyll bundler
 ```
 
 ## Create a new Jekyll site
@@ -22,14 +22,14 @@ You can either use the default starter project given to you by Jekyll or you
 can create one from scratch file by file.
 
 ```sh
-jekyll new site-name
+$ jekyll new site-name
 ```
 
 This creates a new folder called `site-name`, so navigate to it and to run your
 project you start the local Jekyll server:
 
 ```sh
-bundle exec jekyll serve
+$ bundle exec jekyll serve
 ```
 
 Visit your site by going to `http://localhost:4000`.
@@ -101,7 +101,8 @@ You can create as many layout as you want.
 
 **Includes**: Use `_includes/` for reusable components like headers, footers, navigation bars, etc.
 
-Include them in your pages or posts by typing `{% include navigation.html %}`.
+Include them in your pages or posts by typing `include navigation.html` enclosed 
+the Liquid templating engine tags `{% your-file.html %}`
 
 ---
 
@@ -127,7 +128,7 @@ end
 
 **_config.yml**
 
-```yaml
+```sh
 plugins:
   - jekyll-feed
 ```
