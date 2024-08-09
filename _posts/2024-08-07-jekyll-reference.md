@@ -102,7 +102,7 @@ You can create as many layout as you want.
 **Includes**: Use `_includes/` for reusable components like headers, footers, navigation bars, etc.
 
 Include them in your pages or posts by typing `include navigation.html` enclosed 
-the Liquid templating engine tags `{% your-file.html %}`
+the Liquid templating engine tags.
 
 ---
 
