@@ -1,4 +1,6 @@
 title: cspablocortez
+baseurl: ""                         # hosted at the root
+timezone: America/Los_Angeles
 
 markdown: kramdown
 highlighter: rouge

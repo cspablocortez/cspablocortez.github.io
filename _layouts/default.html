@@ -6,11 +6,16 @@
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/x-icon" href="https://pablocortez.github.io/favicon.ico">
     <link rel="stylesheet" href="/assets/css/cspablocortez.css">
+    <link rel="stylesheet" href="/assets/css/monokai.css">
 </head>
 <body>
 
     <nav>
+        {% if page.url == "/" %}
         <h1 id="site-title"><a href="/">{{site.title}}</a></h1>
+        {% else%}
+        <h1><a href="/">{{site.title}}</a></h1>
+        {% endif %}
         <!-- If current URL isn't home page, I should be able to get rid of the large title -->
     </nav>
 
