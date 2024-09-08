@@ -2,9 +2,8 @@
 title: Web Development Review
 author: Pablo E. Cortez
 layout: lesson
-published: true
 permalink: /web-development-review
-hidden: false
+hidden: true
 ---
 
 Some of the web development concepts we have reviewed in the past few lessons include:

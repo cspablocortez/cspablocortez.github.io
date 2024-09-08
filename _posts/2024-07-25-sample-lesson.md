@@ -2,9 +2,9 @@
 title: Sample Lesson
 author: Pablo E. Cortez
 layout: lesson
-published: true
-permalink: /test-lesson
 hidden: true
+published: false
+permalink: /test-lesson
 ---
 
 This is a sample interactive lesson.
