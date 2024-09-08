@@ -2,10 +2,27 @@
 layout: default
 ---
 
-<p>This page will be updated to show the latest posts and sections of the website as it grows.</p>
+<section>
+  {{ content }}
+</section>
 
-<p style="margin: 2rem 0rem"><strong>Latest Posts:</strong></p>
 
-<div class="feed">
-    {% include blog_feed.html %}
-</div>
+<div class="two-columns">
+
+  <div class="column">
+    <h1>Recent</h1>
+
+    {% for post in site.posts %}
+    {% unless post.hidden %}
+
+    <div class="post">
+      <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
+      <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+    </div>
+
+    {% endunless %}
+    {% endfor %}
+
+   </div>
+
+</div>  
