@@ -68,7 +68,7 @@ Include front matter at the top of your file:
 ---
 layout: post
 title: My Title
-author: Pablo E. Cortez
+author: Author Name
 date: 2024-08-07 21:35 -0400
 ---
 ``` 
@@ -135,6 +135,3 @@ plugins:
 
 Just make sure to add your plugin to your `Gemfile` and also to your `_config.yml` file.
 
----
-
-*On Friday, we will add the portion for deploying to Github Pages*.

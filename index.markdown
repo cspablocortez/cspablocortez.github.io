@@ -4,7 +4,7 @@ title: Home
 permalink : /
 ---
 
-This website is under development.
+<p style="text-align: center;">This website is under development.</p>
 
 
 
