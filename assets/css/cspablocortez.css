@@ -3,6 +3,8 @@
 :root {
   --sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --serif: 'Crimson Text', 'Georgia','PT Serif', 'Garamond', serif;
+  --site-max-width: 850px;
+  --content-max-width: 550px;
   --bg-color: white;
   --text-color: #222;
   --primary-color: #211EB3;
@@ -23,7 +25,7 @@ body {
   font-family: var(--sans-serif);
   color: var(--text-color);
   line-height: 1.5;
-  padding-inline: 1rem;
+  padding-inline: var(--base-font-size);
   font-size: var(--base-font-size);
 }
 
@@ -38,14 +40,14 @@ a:hover {
 
 nav {
   margin-inline: auto;
-  margin-bottom: 4rem;
+  margin-bottom: calc(4 * var(--base-font-size));
   width: 100%;
-  max-width: 850px;
+  max-width: var(--site-max-width);
 }
 
 nav h1 {
-  font-size: 1rem;
-  padding-bottom: 0.5rem; /* this is half h1 font size */
+  font-size: var(--base-font-size);
+  padding-bottom: calc(0.5 * var(--base-font-size));
   border-bottom: 1px solid rgb(214, 214, 214);
 }
 
@@ -55,7 +57,7 @@ nav h1 a {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: calc(2.4 * var(--base-font-size));
 }
 
 main {
@@ -64,9 +66,9 @@ main {
 
 section {
   width: 100%;
-  max-width: 550px;
+  max-width: var(--content-max-width);
   margin-inline: auto;
-  margin-block: 4rem;
+  margin-block: calc(4 * var(--base-font-size));
 }
 
 header {
@@ -84,8 +86,8 @@ header p {
 
 blockquote {
   border-left: 2px solid #8b8b8b;
-  padding-left: 1rem;
-  margin-inline-start: 1rem;
+  padding-left: var(--base-font-size);
+  margin-inline-start: var(--base-font-size);
 }
 
 img {
@@ -110,7 +112,7 @@ pre {
 
 /* Home Page */
 #site-title {
-  font-size: 2.6rem;
+  font-size: calc(2.6 * var(--base-font-size));
   padding-bottom: none;
   border-bottom: none;
 }
@@ -122,18 +124,18 @@ pre {
 
 .post {
   animation: perspective-shift 5s ease-in-out infinite alternate;
-  margin-block: 2rem;
+  margin-block: calc(2 * var(--base-font-size));
 }
 
 .post h1 {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--base-font-size);
 }
 
 .post p {
   color: var(--secondary-color);
   margin: 0;
-  font-size: 0.8rem;
+  font-size: calc(0.8 * var(--base-font-size));
 }
 
 
@@ -141,7 +143,7 @@ pre {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 850px;
+  max-width: var(--site-max-width);
   margin-inline: auto;
 }
 
@@ -168,7 +170,7 @@ pre {
   }
 
   .column h1 {
-    font-size: 1rem;
+    font-size: var(--base-font-size);
   }
 
 }
@@ -179,8 +181,4 @@ pre {
   blockquote { font-size: 0.9rem;  }
   section { margin-block: 2rem; }
   header p { font-size: 0.9rem }
-
 }
-
-
-
