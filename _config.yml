@@ -1,12 +1,5 @@
 title: cspablocortez
+url: "https://cspablocortez.github.io"
 baseurl: ""                         # hosted at the root
 timezone: America/Los_Angeles
 
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-  syntax_highlighter: rouge
-
-plugins:
-  - jekyll-feed
