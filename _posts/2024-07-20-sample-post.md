@@ -7,7 +7,8 @@ author:
 - Nelson Mandela Muntz
 meta: "Springfield"
 permalink: /test
-published: false
+published: true
+hidden: true
 ---
 
 # Header 1
