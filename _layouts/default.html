@@ -12,11 +12,10 @@
 
     <nav>
         {% if page.url == "/" %}
-        <h1 id="site-title"><a href="/">{{site.title}}</a></h1>
-        {% else%}
-        <h1><a href="/">{{site.title}}</a></h1>
+            <h1 id="site-title"><a href="/">{{site.title}}</a></h1>
+        {% else %}
+            <h1><a href="/">{{site.title}}<span style="color: var(--secondary-color)">.github.io</span></a></h1>
         {% endif %}
-        <!-- If current URL isn't home page, I should be able to get rid of the large title -->
     </nav>
 
     <main>
