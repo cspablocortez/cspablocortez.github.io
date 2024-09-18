@@ -108,6 +108,20 @@ pre {
   word-break: break-all;
 }
 
+summary h1 {
+  display: inline;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+
 
 /* Home Page */
 #site-title {
@@ -120,23 +134,7 @@ pre {
   color: var(--text-color);
   text-decoration: none;
 }
-
-.post {
-  animation: perspective-shift 5s ease-in-out infinite alternate;
-  margin-block: calc(2 * var(--base-font-size));
-}
-
-.post h1 {
-  margin: 0;
-  font-size: var(--base-font-size);
-}
-
-.post p {
-  color: var(--secondary-color);
-  margin: 0;
-  font-size: calc(0.8 * var(--base-font-size));
-}
-
+/* End Home Page */
 
 .two-columns {
   display: flex;
@@ -154,13 +152,37 @@ pre {
   padding: 2px 4px;
 }
 
+.column h1 {
+  font-size: calc(1.2 * var(--base-font-size));
+  /* margin-top: 4rem; */
+}
+
+.post {
+  margin-block: calc(2 * var(--base-font-size));
+}
+
+.quoteback {
+  margin-block: calc(2 * var(--base-font-size));
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: var(--base-font-size);
+}
+
+.post h1 {
+  margin: 0;
+  font-size: var(--base-font-size);
+}
+
+.post p {
+  color: var(--secondary-color);
+  margin: 0;
+  font-size: calc(0.92 * var(--base-font-size));
+}
+
 .language-sh, .language-console {
   color: white;
 }
 
-.column h1 {
-  font-size: var(--base-font-size);
-}
 
 @media (min-width: 768px) {
   .two-columns {

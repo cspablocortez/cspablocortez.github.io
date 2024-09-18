@@ -31,6 +31,19 @@ layout: default
         <p>{{ bookmark.description }}</p>
       </div>
      {% endfor %}
+     
+    <details>
+      <summary><h1>Quotebacks</h1></summary>
+      <p>Quotebacks are self-contained blockquote components that make it easy to reference content and create dialogue with other sites.</p>
+    </details>
+      {% for quoteback in site.data.quotebacks %}
+       <div class="post quoteback">
+         <blockquote>
+           <p>{{ quoteback.text }}</p>
+         </blockquote>
+         <p>{{ quoteback.author}} via <a href="{{quoteback.url}}">{{ quoteback.source }}</a></p>
+       </div>
+      {% endfor %}
    </div>
 
 </div>  
