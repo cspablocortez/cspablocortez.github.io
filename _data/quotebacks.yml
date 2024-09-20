@@ -1,5 +1,5 @@
 - title: "Re: The early internet is breaking - here's how the World Wide Web from the 90s on will be saved"
-  author: "@nirui.io"
+  author: "nirui.io"
   source: YouTube
   url: https://www.youtube.com/watch?v=2LzyRcLJdlg&lc=UgzgtJ-MTVIisHqz_zl4AaABAg
   text: > 
@@ -11,4 +11,22 @@
     The most sad thing is, people have forgotten 
     that they are creators, and they don't need someone
     to grant them that title.
-  
+
+- title: "Re: So very sad to hear about the passing of Ruby legend Jim Weirich"
+  author: "viraptor"
+  source: Hacker News
+  url: https://news.ycombinator.com/item?id=7270512
+  text: > 
+    Just realised how often when working on some code 
+    I will try to contact the original author based 
+    on git blame... but in the future, a lot of those 
+    people won't be around anymore. I think we usually 
+    take for granted that people working on the same 
+    project will be here - but in a couple of years 
+    "anyone who worked on this module still alive?" may 
+    be depressingly more common. Not even from the development 
+    perspective, but working on the same thing as someone who's 
+    not alive anymore. Apart from long-term or famous 
+    construction projects, I can't think of many non-art places 
+    where the author is preserved in the history so permanently 
+    as in a source version control.
