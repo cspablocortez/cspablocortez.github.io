@@ -4,15 +4,17 @@ layout: default
 
 <section>
   {{ content }}
+  <div class="post">
+    <h1><a href="/library">Library</a></h1>
+    <p>Like how people display their books. A library.</p>
+  </div>
 </section>
 
-
 <div class="two-columns">
-
   <div class="column">
     <section>
       <h1>Recent</h1>
-      {% for post in site.posts %}
+      {% for post in site.posts limit:3 %}
       {% unless post.hidden %}
         <div class="post">
           <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
@@ -37,17 +39,15 @@ layout: default
    <div class="column">
      
      <section>
-       <details>
-          <summary><h1>Quotebacks</h1></summary>
-          <p>Quotebacks are self-contained blockquote components that make it easy to reference content and create dialogue with other sites.</p>
-        </details>
+        <h1>Around the web</h1>
            {% assign reversed_quotebacks = site.data.quotebacks | reverse %}
            {% for quoteback in reversed_quotebacks %}
            <div class="post quoteback">
+             <p id="qb-byline"><strong>{{ quoteback.author}}</strong> via <a href="{{quoteback.url}}" target="_blank">{{ quoteback.source }}</a></p>
              <blockquote>
                <p>{{ quoteback.text }}</p>
              </blockquote>
-             <p>{{ quoteback.author}} via <a href="{{quoteback.url}}" target="_blank">{{ quoteback.source }}</a></p>
+            
            </div>
           {% endfor %}
      </section>
