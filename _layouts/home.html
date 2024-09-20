@@ -12,7 +12,6 @@ layout: default
   <div class="column">
     <section>
       <h1>Recent</h1>
-      
       {% for post in site.posts %}
       {% unless post.hidden %}
         <div class="post">
@@ -27,7 +26,7 @@ layout: default
       <h1>Bookmarks</h1>
        {% for bookmark in site.data.bookmarks %}
         <div class="post">
-          <h1><a href="{{bookmark.url}}">{{ bookmark.title }}</a></h1>
+          <h1><a href="{{bookmark.url}}" target="_blank">{{ bookmark.title }}</a></h1>
           <p>{{ bookmark.description }}</p>
         </div>
        {% endfor %}
@@ -48,7 +47,7 @@ layout: default
              <blockquote>
                <p>{{ quoteback.text }}</p>
              </blockquote>
-             <p>{{ quoteback.author}} via <a href="{{quoteback.url}}">{{ quoteback.source }}</a></p>
+             <p>{{ quoteback.author}} via <a href="{{quoteback.url}}" target="_blank">{{ quoteback.source }}</a></p>
            </div>
           {% endfor %}
      </section>
