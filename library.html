@@ -13,11 +13,11 @@ description: "Like how people display their books. A library."
     </header>
   </section>
   
-    <div id="library">
+    <section id="library">
       {% for book in site.data.library %}
       <div class="book">
         <img src="{{ book.image_url }}" alt="{{ book.title }} Book Cover">
       </div>
       {% endfor %}
-    </div>
+    </section>
 </article>
