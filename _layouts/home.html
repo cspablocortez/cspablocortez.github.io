@@ -10,40 +10,49 @@ layout: default
 <div class="two-columns">
 
   <div class="column">
-    <h1>Recent</h1>
-
-    {% for post in site.posts %}
-    {% unless post.hidden %}
-      <div class="post">
-        <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
-        <p>{{ post.date | date: "%Y-%m-%d" }}</p>
-      </div>
-    {% endunless %}
-    {% endfor %}
+    <section>
+      <h1>Recent</h1>
+      
+      {% for post in site.posts %}
+      {% unless post.hidden %}
+        <div class="post">
+          <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
+          <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+        </div>
+      {% endunless %}
+      {% endfor %}
+    </section>
+    
+    <section>
+      <h1>Bookmarks</h1>
+       {% for bookmark in site.data.bookmarks %}
+        <div class="post">
+          <h1><a href="{{bookmark.url}}">{{ bookmark.title }}</a></h1>
+          <p>{{ bookmark.description }}</p>
+        </div>
+       {% endfor %}
+    </section>
 
    </div>
 
    <div class="column">
-     <h1>Bookmarks</h1>
-     {% for bookmark in site.data.bookmarks %}
-      <div class="post">
-        <h1><a href="{{bookmark.url}}">{{ bookmark.title }}</a></h1>
-        <p>{{ bookmark.description }}</p>
-      </div>
-     {% endfor %}
      
-    <details>
-      <summary><h1>Quotebacks</h1></summary>
-      <p>Quotebacks are self-contained blockquote components that make it easy to reference content and create dialogue with other sites.</p>
-    </details>
-      {% for quoteback in site.data.quotebacks %}
-       <div class="post quoteback">
-         <blockquote>
-           <p>{{ quoteback.text }}</p>
-         </blockquote>
-         <p>{{ quoteback.author}} via <a href="{{quoteback.url}}">{{ quoteback.source }}</a></p>
-       </div>
-      {% endfor %}
+     <section>
+       <details>
+          <summary><h1>Quotebacks</h1></summary>
+          <p>Quotebacks are self-contained blockquote components that make it easy to reference content and create dialogue with other sites.</p>
+        </details>
+           {% assign reversed_quotebacks = site.data.quotebacks | reverse %}
+           {% for quoteback in reversed_quotebacks %}
+           <div class="post quoteback">
+             <blockquote>
+               <p>{{ quoteback.text }}</p>
+             </blockquote>
+             <p>{{ quoteback.author}} via <a href="{{quoteback.url}}">{{ quoteback.source }}</a></p>
+           </div>
+          {% endfor %}
+     </section>
+    
    </div>
 
 </div>  

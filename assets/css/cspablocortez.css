@@ -9,12 +9,14 @@
   --secondary-color: #797272;
   --accent-color: #1f7de1;
   --base-font-size: 1rem;
+  --quoteback-bg-color: rgba(244, 244, 244, 0.68);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: black;
     --text-color: white;
+    --quoteback-bg-color: #121212;
   }
 }
 
@@ -144,18 +146,10 @@ details[open] summary {
   margin-inline: auto;
 }
 
-.language-plaintext {
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  color: #c7254e;
-  font-size: 85%;
-  padding: 2px 4px;
-}
-
 .column h1 {
   font-size: calc(1.2 * var(--base-font-size));
-  /* margin-top: 4rem; */
 }
+
 
 .post {
   margin-block: calc(2 * var(--base-font-size));
@@ -164,8 +158,17 @@ details[open] summary {
 .quoteback {
   margin-block: calc(2 * var(--base-font-size));
   border: 1px solid #aaa;
+  background-color: var(--quoteback-bg-color);
   border-radius: 8px;
   padding: var(--base-font-size);
+}
+
+.quoteback blockquote {
+  border-left: 2px solid #ae0f47;
+}
+
+.quoteback p {
+  color: var(--text-color) !important;
 }
 
 .post h1 {
@@ -183,6 +186,13 @@ details[open] summary {
   color: white;
 }
 
+.language-plaintext {
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  color: #c7254e;
+  font-size: 85%;
+  padding: 2px 4px;
+}
 
 @media (min-width: 768px) {
   .two-columns {
@@ -191,17 +201,16 @@ details[open] summary {
 
   .column {
     flex: 1;
-    border-radius: 10px;
+    padding: var(--base-font-size);
   }
-
-  
-
 }
+
 
 @media only screen and (max-width: 400px) {
   nav h1 { font-size: 1.2rem; }
   body { font-size: 1.1rem; line-height: 1.4; }
   blockquote { font-size: 0.9rem;  }
   section { margin-block: 2rem; }
-  header p { font-size: 0.9rem }
+  .column { margin-block: 1rem; }
+  header p { font-size: 0.9rem; }
 }
