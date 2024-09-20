@@ -201,6 +201,40 @@ details[open] summary {
   padding: 2px 4px;
 }
 
+/* Library */
+#library {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.book {
+  margin: 1rem;
+}
+
+.book img {
+  border: 3px solid var(--text-color);
+  border-radius: calc(0.25 * var(--base-font-size));
+  width: 100%;
+  max-width: 220px;
+  min-width: 100px;
+}
+
+.book img:hover {
+  animation: enlarge 2s forwards;
+  cursor: pointer;
+  transform: rotate(1deg);
+}
+
+@keyframes enlarge {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(1deg) scale(1.1);
+  }
+}
+
 @media (min-width: 768px) {
   .two-columns {
     flex-direction: row;
@@ -218,6 +252,6 @@ details[open] summary {
   body { font-size: 1.1rem; line-height: 1.4; }
   blockquote { font-size: 0.9rem;  }
   section { margin-block: 2rem; }
-  .column { margin-block: 1rem; }
   header p { font-size: 0.9rem; }
+  .column { margin-block: 1rem; }
 }
