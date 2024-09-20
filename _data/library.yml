@@ -51,4 +51,11 @@
     This book of readings is a flexible resource for undergraduate
     and graduate courses in the evolving fields of computer and 
     Internet ethics. 
-  
+
+- title: "Programming Principles and Practice"
+  author: "Bjarne Stroustrup"
+  url: https://www.stroustrup.com/programming.html
+  image_url: https://www.stroustrup.com/PPP3cover.jpg
+  release_date: April 2024
+  description: >
+    Programming: Principles and Practice Using C++, Third Edition, will help anyone who is willing to work hard learn the fundamental principles of programming and develop the practical skills needed for programming in the real world.
