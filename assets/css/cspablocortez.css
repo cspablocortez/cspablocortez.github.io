@@ -14,9 +14,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: black;
-    --text-color: white;
-    --quoteback-bg-color: #121212;
+    --bg-color: #111;
+    --text-color: rgb(224, 224, 224);
+    --quoteback-bg-color: #222222;
+    --secondary-color: #9f9d9d;
+    /* --accent-color: #ad0f76; */
   }
 }
 
@@ -157,18 +159,23 @@ details[open] summary {
 
 .quoteback {
   margin-block: calc(2 * var(--base-font-size));
-  border: 1px solid #aaa;
+  border: 1px solid var(--secondary-color);
   background-color: var(--quoteback-bg-color);
-  border-radius: 8px;
-  padding: var(--base-font-size);
 }
 
 .quoteback blockquote {
-  border-left: 2px solid #ae0f47;
+  border-left: 2px solid var(--accent-color);
+  margin: 2rem;
 }
 
 .quoteback p {
   color: var(--text-color) !important;
+}
+
+#qb-byline {
+  background-color: var(--bg-color); 
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .post h1 {
