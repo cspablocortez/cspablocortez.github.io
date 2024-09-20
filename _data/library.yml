@@ -1,0 +1,54 @@
+- title: "Node: Up and Running"
+  author: "Tom Hughes-Croucher, Mike Wilson"
+  url: https://www.oreilly.com/library/view/node-up-and/9781449332235/
+  image_url: https://learning.oreilly.com/library/cover/9781449332235/250w/
+  release_date: April 2012
+  description: >
+    This book introduces you to Node, the new web development 
+    framework written in JavaScript. You'll learn hands-on how 
+    Node makes life easier for experienced JavaScript developers: 
+    not only can you work on the front end and back end in the 
+    same language, you'll also have more flexibility in choosing 
+    how to divide application logic between client and server.
+    
+- title: Agile Web Development with Rails 7
+  author: "Sam Ruby, with Dave Thomas"
+  url: https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/
+  image_url: https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/rails7-500.jpg
+  release_date: May 2023
+  description: >
+    Rails 7 completely redefines what it means to 
+    produce fantastic user experiences and provides 
+    a way to achieve all the benefits of single-page 
+    applications - at a fraction of the complexity.
+    Rails 7 integrates the Hotwire frameworks of
+    Stimulus and Turbo directly as the new defaults, 
+    together with that hot newness of import maps. 
+    The result is a toolkit so powerful that it allows 
+    a single individual to create modern applications upon 
+    which they can build a competitive business. The way 
+    it used to be.
+  
+- title: Build Awesome Command-Line Applications in Ruby 
+  author: David B. Copeland
+  url: https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/
+  image_url: https://learning.oreilly.com/library/cover/9781941222409/250w/
+  release_date: April 2012
+  description: >
+    With this book, you'll learn specific ways to write 
+    command-line applications that are easy to use, deploy, 
+    and maintain, using a set of clear best practices and 
+    the Ruby programming language. This book is designed to 
+    make any programmer or system administrator more 
+    productive in their job.
+  
+- title: Readings in Cyberethics
+  author: Richard A. Spinello
+  url: https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/
+  image_url: https://ia800609.us.archive.org/view_archive.php?archive=/3/items/olcovers51/olcovers51-L.zip&file=517025-L.jpg
+  release_date: 2001
+  description: >
+    This book of readings is a flexible resource for undergraduate
+    and graduate courses in the evolving fields of computer and 
+    Internet ethics. 
+  
