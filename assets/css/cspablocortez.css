@@ -10,6 +10,8 @@
   --accent-color: #1f7de1;
   --base-font-size: 1rem;
   --quoteback-bg-color: rgba(244, 244, 244, 0.68);
+  --ovid-cta-bg-color: black;
+  --ovid-cta-text-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +20,8 @@
     --text-color: rgb(224, 224, 224);
     --quoteback-bg-color: #222222;
     --secondary-color: #9f9d9d;
-    /* --accent-color: #ad0f76; */
+    --ovid-cta-bg-color: rgb(248, 223, 219);
+    --ovid-cta-text-color: black;
   }
 
 }
@@ -273,6 +276,26 @@ details[open] summary {
   font-size: 1.5rem;
 }
 
+#ovid-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ovid-cta-bg-color);
+  color: var(--ovid-cta-text-color);
+  font-weight: bold;
+  border-radius: 40px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.3rem;
+  margin-inline: auto;
+  text-decoration: none;
+}
+
+#ovid-cta:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 @media (prefers-color-scheme: dark) {
   .landing-page {
     background: linear-gradient(180deg, color(display-p3 0.841 0.46 0.606 / 0.579) 0%, rgba(255,255,255,0) 100%);
@@ -289,6 +312,10 @@ details[open] summary {
   .landing-page p {
     font-size: 1.7rem;
   }
+  #ovid-mobile-image img {
+    max-width: 75%;
+    float: right;
+  }
 }
 
 
@@ -299,5 +326,5 @@ details[open] summary {
   section { margin-block: 2rem; }
   header p { font-size: 0.9rem; }
   .column { margin-block: 1rem; }
-  .landing-page { flex-direction: column; text-align: center; }
+  .landing-page { flex-direction: column; text-align: center; overflow-x: hidden; }
 }
