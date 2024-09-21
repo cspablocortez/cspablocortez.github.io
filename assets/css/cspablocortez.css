@@ -20,6 +20,7 @@
     --secondary-color: #9f9d9d;
     /* --accent-color: #ad0f76; */
   }
+
 }
 
 body {
@@ -237,17 +238,66 @@ details[open] summary {
   }
 }
 
+/* Landing Pages */
+
+.landing-page {
+  background: linear-gradient(0deg, color(display-p3 0.935 0.831 0.809) 0%, rgba(255,255,255,0) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: -2rem;
+  padding-block: 4rem;
+  padding-inline: 15%;
+  overflow-x: hidden;
+}
+
+.landing-page h1 {
+  font-size: 2.8rem;
+  margin-block: 2rem;
+}
+
+.landing-page div {
+  margin-inline: 4rem;
+  width: 100%;
+}
+
+.landing-page img {
+  max-width: 200px;
+  min-width: 120px;
+  border-radius: 40px;
+  box-shadow: -3px 4px 14px -3px rgba(0, 0, 0, 0.4);
+}
+
+.landing-page p {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .landing-page {
+    background: linear-gradient(180deg, color(display-p3 0.841 0.46 0.606 / 0.579) 0%, rgba(255,255,255,0) 100%);
+  }
+}
+
+
 @media (min-width: 768px) {
   .two-columns { flex-direction: row;  }
   .column { flex: 1; padding: var(--base-font-size); }
+  .landing-page h1 {
+    font-size: 3.6rem;
+  }
+  .landing-page p {
+    font-size: 1.7rem;
+  }
 }
 
 
 @media only screen and (max-width: 400px) {
   nav h1 { font-size: 1.2rem; }
-  body { font-size: 1.1rem; line-height: 1.4; }
+  body { font-size: 1.1rem; line-height: 1.4; overflow-x: hidden; }
   blockquote { font-size: 0.9rem;  }
   section { margin-block: 2rem; }
   header p { font-size: 0.9rem; }
   .column { margin-block: 1rem; }
+  .landing-page { flex-direction: column; text-align: center; }
 }
