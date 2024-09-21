@@ -1,5 +1,5 @@
 ---
-title: Ovid Writer Landing Page
+title: Ovid Writer Has A New Landing Page
 date: 2024-09-21
 layout: post
 published: true
