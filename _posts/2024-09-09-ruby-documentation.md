@@ -17,3 +17,7 @@ published: true
 
   - Independent Rails project supported by [Ruby Central](https://rubycentral.org)
 
+- [gemdocs.org](https://gemdocs.org)
+
+  - An experimental gem documentation hosting service.
+
