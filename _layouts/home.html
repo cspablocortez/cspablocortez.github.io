@@ -15,16 +15,6 @@ layout: default
       {% endunless %}
       {% endfor %}
     </section>
-    
-    <section>
-      <h1>Bookmarks</h1>
-       {% for bookmark in site.data.bookmarks %}
-        <div class="post">
-          <h1><a href="{{bookmark.url}}" target="_blank">{{ bookmark.title }}</a></h1>
-          <p>{{ bookmark.description }}</p>
-        </div>
-       {% endfor %}
-    </section>
 
    </div>
 
