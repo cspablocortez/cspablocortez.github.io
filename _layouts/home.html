@@ -25,7 +25,7 @@ layout: default
            {% assign reversed_quotebacks = site.data.quotebacks | reverse %}
            {% for quoteback in reversed_quotebacks %}
            <div class="post quoteback">
-             <p id="qb-byline"><strong>{{ quoteback.author}}</strong> via <a href="{{quoteback.url}}" target="_blank">{{ quoteback.source }}</a></p>
+             <p class="qb-byline"><strong>{{ quoteback.author}}</strong> via <a href="{{quoteback.url}}" target="_blank">{{ quoteback.source }}</a></p>
              <blockquote>
                <p>{{ quoteback.text }}</p>
              </blockquote>
