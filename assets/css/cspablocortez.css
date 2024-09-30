@@ -176,7 +176,7 @@ details[open] summary {
   color: var(--text-color) !important;
 }
 
-#qb-byline {
+.qb-byline {
   background-color: var(--bg-color); 
   padding: 0.75rem;
   border-bottom: 1px solid var(--secondary-color);
