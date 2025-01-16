@@ -109,7 +109,7 @@ the Liquid templating engine tags.
 # Advanced Features
 
 **Plugins**: Jekyll suports various plugins for Search Engine Optimization (SEO),
-generating blog feedds, etc. To use a plugin, add it to your `Gemfile`.
+generating blog feeds, etc. To use a plugin, add it to your `Gemfile` and to your `_config.yml`.
 
 This website uses the following plugins:
 
