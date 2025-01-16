@@ -6,7 +6,7 @@ layout: default
   <div class="column">
     <section>
       <h1>Recent</h1>
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts limit:5 %}
       {% unless post.hidden %}
         <div class="post">
           <h1><a href="{{post.url}}">{{ post.title }}</a></h1>
