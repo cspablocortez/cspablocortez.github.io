@@ -10,5 +10,5 @@ technology in general.
 The project is built with [Jekyll](https://jekyllrb.com/). 
 It uses [Github 
 Actions](https://github.com/features/actions) to compile the 
-project and serve over [Github 
+project and serve it with [Github 
 Pages](https://pages.github.com/).

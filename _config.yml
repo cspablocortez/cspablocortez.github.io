@@ -1,8 +1,13 @@
-title: cspablocortez
+title: cspablocortez.github.io
+description: >-
+  A commonplace book for web development.
 author: cspablocortez
 url: "https://cspablocortez.github.io"
 baseurl: ""                         # hosted at the root
 timezone: America/Los_Angeles
 
+remote_theme: cspablocortez/arrow-jekyll-theme
+
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
